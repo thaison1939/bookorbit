@@ -3,7 +3,1142 @@
     "resetSortAria": "Visszaállítás alap állapotra",
     "save": "Mentés",
     "cancel": "Mégsem",
+    "delete": "Törlés",
+    "edit": "Szerkesztés",
+    "close": "Bezárás",
+    "confirm": "Megerősítés",
+    "loading": "Betöltés...",
+    "search": "Keresés",
+    "back": "Vissza",
+    "next": "Következő",
+    "previous": "Előző",
+    "retry": "Újra",
     "yes": "Igen",
-    "no": "Nem"
+    "no": "Nem",
+    "show": "Mutat",
+    "hide": "Elrejt"
+  },
+  "settings": {
+    "privacySharing": {
+      "title": "Adatvédelem és megosztás",
+      "subtitle": "Szabályozhatod, hogy az adminisztrátorok láthatják-e az olvasási tevékenységed azonosítható összegzését.",
+      "levelLegend": "Olvasási információk megosztási szintje",
+      "current": "Aktuális beállítás",
+      "levels": {
+        "private": {
+          "title": "Privát",
+          "description": "Csak te láthatod az olvasási statisztikáidat."
+        },
+        "summary": {
+          "title": "Összefoglaló megosztása",
+          "description": "Ossz meg összesített szokásokat könyvcímek, szerzők, sorozatok vagy narrátorok nélkül."
+        },
+        "detailed": {
+          "title": "Részletes elemzések megosztása",
+          "description": "Ossz meg legújabb és legnépszerűbb könyveket, szerzőket, sorozatokat, műfajokat és narrátorokat is."
+        }
+      },
+      "fields": {
+        "frequency": "Olvasási gyakoriság és aktív napok",
+        "completion": "Elkezdett és befejezett könyvek összegzése",
+        "formats": "Formátumeloszlás",
+        "genres": "Széles műfaji eloszlás",
+        "trend": "Összesített olvasási trend",
+        "books": "Jelenlegi, legújabb és legolvasottabb könyvcímek",
+        "authors": "Legjobb szerzők",
+        "series": "Legjobb sorozatok",
+        "narrators": "Legjobb narrátorok"
+      },
+      "confirm": {
+        "shareTitle": "{level} engedélyezése?",
+        "shareDescription": "Az engedéllyel rendelkező adminisztrátorok a következő információkat láthatják.",
+        "stopTitle": "Leállítod az olvasási információk megosztását?",
+        "stopDescription": "A adminisztrátori hozzáférés azonnal blokkolásra kerül. A meglévő hozzáférési rekordok megmaradnak az előzményekben.",
+        "recordedNotice": "Minden adminisztrátori profil megtekintés rögzítésre kerül, és megjelenik a hozzáférési előzményekben."
+      },
+      "preview": {
+        "title": "Megosztott profil előnézete",
+        "description": "A jogosult adminisztrátorok számára jelenleg elérhető információk megtekintése.",
+        "action": "Előnézet betöltése",
+        "readingTime": "Olvasási idő",
+        "activeDays": "Aktív napok",
+        "started": "Elkezdett könyvek",
+        "completed": "Befejezett könyvek",
+        "topBooks": "Legjobb könyvek"
+      },
+      "history": {
+        "title": "Profil hozzáférési előzmények",
+        "description": "A megosztott olvasási profilod legutóbbi adminisztrátori megtekintései.",
+        "empty": "Egyetlen adminisztrátor sem tekintette meg a megosztott olvasási profilodat.",
+        "paginationLabel": "Profil hozzáférési előzmények oldalai"
+      },
+      "durationMinutes": "{count, plural, one {# perc} other {# perc}}",
+      "durationHours": "{count, plural, one {# óra} other {# óra}}",
+      "unknownTitle": "Cím nélküli könyv",
+      "errors": {
+        "load": "Nem sikerült betölteni a megosztási beállításokat.",
+        "save": "Nem sikerült frissíteni a megosztási beállításokat.",
+        "preview": "Nem sikerült betölteni a megosztott profil előnézetét."
+      }
+    },
+    "appearance": {
+      "language": {
+        "title": "Nyelv",
+        "description": "Válaszd ki a kezelőfelületen használt nyelvet.",
+        "label": "Nyelv",
+        "loadError": "Nem sikerült betölteni a kiválasztott nyelvet",
+        "saveError": "Nem sikerült menteni a nyelvi beállításokat"
+      },
+      "pageTitle": "Megjelenés",
+      "pageSubtitle": "Szabályozd a témákat, borítókat, elrendezést és a könyvtár megjelenítését.",
+      "mobileSummary": "Téma: {theme} • Kiemelés: {accent} • Háttér: {background}",
+      "themeMode": {
+        "light": "Világos",
+        "dark": "Sötét",
+        "system": "Rendszer"
+      },
+      "theme": {
+        "title": "Téma",
+        "colorScheme": {
+          "label": "Színséma",
+          "hint": "Világos vagy sötét felület"
+        },
+        "accents": {
+          "grey": "Szürke",
+          "scarlet": "Skarlátvörös",
+          "vermilion": "Élénkpiros",
+          "rose": "Rózsa",
+          "copper": "Réz",
+          "orange": "Narancs",
+          "chartreuse": "Karthauzi",
+          "marigold": "Körömvirág",
+          "wasabi": "Wasabi",
+          "amber": "Borostyán",
+          "malachite": "Malahit",
+          "yellow": "Sárga",
+          "viridian": "Sárgászöld",
+          "turquoise": "Türkiz",
+          "lime": "Limezöld",
+          "green": "Zöld",
+          "acid-green": "Savas zöld",
+          "emerald": "Smaragd",
+          "teal": "Pávakék",
+          "electric-blue": "Acélkék",
+          "cyan": "Cián",
+          "jade": "Jadezöld",
+          "ultramarine": "Ultramarin",
+          "iris": "Írisz",
+          "purple": "Lila",
+          "blue": "Kék",
+          "indigo": "Indigókék",
+          "violet": "Ibolya",
+          "amethyst": "Ametiszt",
+          "fuchsia": "Fukszia",
+          "raspberry": "Málna",
+          "pink": "Rózsaszín",
+          "white": "Fehér",
+          "rosewater": "Rózsavíz",
+          "salmon": "Lazac",
+          "coral": "Korall",
+          "sand": "Homok",
+          "peach": "Barack",
+          "pear": "Körte",
+          "flax": "Len",
+          "sprout": "Rügy",
+          "butter": "Vaj",
+          "aloe": "Aloé",
+          "lemon": "Citrom",
+          "foam": "Hab",
+          "aqua": "Víz",
+          "celadon": "Szeladon",
+          "sage": "Zsálya",
+          "pistachio": "Pisztácia",
+          "mint": "Menta",
+          "seafoam": "Tengeri hab",
+          "baby-blue": "Babakék",
+          "powder": "Púder",
+          "sea-glass": "Tengeri üveg",
+          "bluebell": "Kékcsengő",
+          "cornflower": "Búzavirág",
+          "thistle": "Bogáncs",
+          "periwinkle": "Nefelejcs",
+          "wisteria": "Lilaakác",
+          "lavender": "Levendula",
+          "mauve": "Mályva",
+          "orchid": "Orchidea",
+          "rose-quartz": "Rózsakvarc",
+          "blush": "Pír"
+        },
+        "accentColor": {
+          "label": "Kiemelőszín"
+        },
+        "cornerRadius": {
+          "label": "Sarokkerekítés",
+          "hint": "A kártyák és a felhasználói felület elemeinek kereksége"
+        },
+        "surfaceBrightness": {
+          "label": "Felület fényessége",
+          "hint": "Sötét módú felületek világosítása",
+          "reset": "Alaphelyzet"
+        },
+        "libraryBackground": {
+          "title": "Könyvtár háttere",
+          "pattern": {
+            "label": "Háttér mintája",
+            "hint": "Minta a könyvrács mögött"
+          }
+        },
+        "backgroundGroups": {
+          "fundamental": "Alapvető",
+          "structural": "Strukturális",
+          "ambient": "Környezeti",
+          "refractive": "Fénytörő"
+        }
+      },
+      "storage": {
+        "title": "A megjelenési beállítások mentésének helye",
+        "active": "Aktív",
+        "notAvailable": "Nem elérhető",
+        "device": {
+          "title": "Csak ez az eszköz",
+          "description": "A beállítások a böngésződben maradnak. Akkor a legjobb, ha különböző eszközökön eltérő megjelenést szeretnél."
+        },
+        "account": {
+          "title": "Fiókom",
+          "description": "A beállítások mentésre kerülnek a fiókodba. Akkor a legjobb, ha minden eszközön ugyanazt a megjelenést szeretnéd."
+        },
+        "toasts": {
+          "synced": "A beállítások mostantól szinkronizálva lesznek",
+          "local": "A beállítások megmaradnak ezen az eszközön"
+        },
+        "errors": {
+          "demoRestricted": "A demókorlátozott fiók nem tudja módosítani a téma tárolási módját",
+          "update": "Nem sikerült frissíteni a tárolási módot",
+          "generic": "Hiba történt a tárolási mód frissítésekor"
+        }
+      },
+      "bookCovers": {
+        "title": "Könyvborítók",
+        "coverSearch": {
+          "label": "Alapértelmezett borítókereső szolgáltató",
+          "hint": "Válaszd ki a forrást, amely a Find cover online megnyílásakor kerül kiválasztásra. A fiókodba mentve, így minden eszközön érvényes lesz.",
+          "loadError": "Nem sikerült betölteni az alapértelmezett borítókereső szolgáltatót",
+          "saveError": "Nem sikerült menteni az alapértelmezett borítókereső szolgáltatót"
+        },
+        "displayMode": {
+          "title": "Borító megjelenítési mód",
+          "hint": "Azt szabályozza, hogy a valódi borítók hogyan illeszkedjenek a könyvek rekeszébe, ha eltérő képarányok vannak",
+          "blurredFit": {
+            "label": "Elmosódott illeszkedés",
+            "hint": "Teljes borító megjelenítése elmosódott kitöltéssel mögötte"
+          },
+          "fillCrop": {
+            "label": "Kártya kitöltése",
+            "hint": "A teljes rés kitöltése szélek levágásával, ha a képarányok eltérnek"
+          },
+          "naturalBottom": {
+            "label": "Természetes alj",
+            "hint": "Tartsa meg az eredeti borító arányt, és rögzítse a borítót az aljához"
+          }
+        },
+        "spine": {
+          "title": "Könyv gerincborítás",
+          "hint": "Stilizált gerincet és fényes hatást ad a kártyák borítójához",
+          "off": {
+            "label": "Ki",
+            "hint": "Nincs gerinc-/fényhatás a borítókon"
+          },
+          "subtle": {
+            "label": "Körvonalas",
+            "hint": "Világos gerinc és fényesség, közelebb az alapértelmezett megjelenéshez"
+          },
+          "strong": {
+            "label": "Erős",
+            "hint": "Kifejezettebb gerinc- és fényességkezelés"
+          }
+        },
+        "showSpineOnComics": {
+          "label": "Gerinc megjelenítése a képregényeken",
+          "hint": "Gerinc és fényes effektus alkalmazása képregényborítókra (cbz, cbr, cb7)"
+        },
+        "detailCoverTint": {
+          "title": "Könyv részletei borítóárnyalat",
+          "hint": "A könyv részleteit tartalmazó oldalon a borítóról mintázott szín elhalványul a grafika és a cím mögött",
+          "off": {
+            "label": "Ki",
+            "hint": "Sima kártya háttere"
+          },
+          "single": {
+            "label": "Egyszínű",
+            "hint": "Csak a borító domináns színe"
+          },
+          "duotone": {
+            "label": "Kétszínű",
+            "hint": "Hozzáadja a borító kiemelő színét, ha van egy megkülönböztető színe"
+          }
+        },
+        "shadow": {
+          "title": "Borítóárnyék erőssége",
+          "hint": "A borítók alatti mélységet szabályozza a rács, lista, táblázat és műszerfal bélyegképei között",
+          "default": {
+            "label": "Alapértelmezett",
+            "hint": "Aktuális magasság és mélység"
+          },
+          "strong": {
+            "label": "Erős",
+            "hint": "Nehezebb, polcszerű árnyék a takaró alatt"
+          }
+        },
+        "overlays": {
+          "title": "Kártyafedvények",
+          "hint": "Válaszd ki a könyvborító kártyákon közvetlenül megjelenített metaadatokat",
+          "progressBar": {
+            "label": "Folyamatjelző",
+            "hint": "Vékony színes vonal az alsó szél mentén"
+          },
+          "format": {
+            "label": "Fájlformátum",
+            "hint": "Színkódolt EPUB, PDF, CBZ jelvény a jobb alsó sarokban"
+          },
+          "rating": {
+            "label": "Értékelés",
+            "hint": "Csillagos értékelés jelző a bal alsó sarokban"
+          },
+          "readStatus": {
+            "label": "Olvasási állapot",
+            "hint": "Színes ikon, amely a bal felső sarokban mutatja az aktuális olvasási állapotot"
+          },
+          "seriesPosition": {
+            "label": "Sorozat száma",
+            "hint": "A jelvény jobb felső sarokban mutatja a könyv sorozatbeli pozícióját (pl. #3, #1.5)"
+          },
+          "lockStatus": {
+            "label": "Állapot zárolása",
+            "hint": "Metaadatok zárolása ikon jobb felső sarokban - narancssárga, ha zárolva van, zöld, ha feloldva"
+          }
+        }
+      },
+      "layout": {
+        "coverSize": "Borító mérete",
+        "gridSpacing": "Rácstávolság",
+        "gridLayout": {
+          "title": "Könyvtárrács elrendezése"
+        },
+        "coverSizeBehavior": {
+          "label": "Borítóméret viselkedése",
+          "hint": "Szabályozhatod, hogy az álló/négyzet alakú méretek és a rácstávolság minden nézetben meg legyen-e osztva, vagy nézetenként megmaradjon",
+          "perViewHint": "Nézetenkénti mód: a borító méretét és a térközt az egyes nézetek megjelenítés paneljén állíthatod be.",
+          "syncAll": "Összes nézet szinkronizálása",
+          "perView": "Nézetenkénti méretek"
+        },
+        "portraitCoverSize": {
+          "label": "Álló borító mérete",
+          "hint": "Álló könyvtárakhoz és nézetekhez használatos"
+        },
+        "squareCoverSize": {
+          "label": "Négyzet alakú borító mérete",
+          "hint": "Négyzet alakú könyvtárakhoz és nézetekhez használatos"
+        },
+        "portraitGridSpacing": {
+          "label": "Álló rács térköz",
+          "hint": "Portréborítók közötti rés"
+        },
+        "squareGridSpacing": {
+          "label": "Négyzet alakú rácstávolság",
+          "hint": "Négyzet alakú fedelek közötti rés"
+        },
+        "cardInfoMode": {
+          "label": "Kártyainformációs mód",
+          "hint": "Hol jelenjenek meg a könyv címe és szerzője a rácskártyákon",
+          "onHover": "Rámutatáskor",
+          "belowCover": "Borító alatt",
+          "off": "Ki"
+        },
+        "primaryCardLabel": {
+          "label": "Elsődleges kártya címke",
+          "hint": "A könyvborítók alatt (első sor) látható szöveg"
+        },
+        "secondaryCardLabel": {
+          "label": "Másodlagos kártya címke",
+          "hint": "További szöveg az elsődleges címke alatt (második sor)"
+        },
+        "labelField": {
+          "hidden": "Rejtett",
+          "bookTitle": "Könyv címe",
+          "seriesTitle": "Sorozat címe",
+          "seriesTitlePosition": "Sorozat címe + pozíció",
+          "author": "Szerző"
+        },
+        "seriesDisplay": {
+          "title": "Sorozat kijelző",
+          "collapsedCover": {
+            "label": "Összecsukott sorozat borító",
+            "hint": "Válaszd ki, hogy melyik borító jelenjen meg, amikor a sorozat összecsukva van a könyvrácsban"
+          },
+          "stack": "Kártyapakli",
+          "mosaic": "Mozaik",
+          "first": "Első",
+          "latest": "Legújabb",
+          "firstUnread": "Első olvasatlan"
+        },
+        "authorGrid": {
+          "title": "Szerzői rács",
+          "coverSize": {
+            "label": "Borító mérete",
+            "hint": "A szerzői borítók szélessége a rácsban"
+          },
+          "coverShape": {
+            "label": "Borító alakja",
+            "hint": "A szerzői borítók alakja a rácsban"
+          },
+          "circle": "Kör",
+          "square": "Szögletes"
+        },
+        "listTableViews": {
+          "title": "Lista- és táblázatnézetek"
+        },
+        "zebraStriping": {
+          "label": "Zebra csíkozás",
+          "hint": "Változó sorháttérszínek a könnyebb szkennelés érdekében"
+        }
+      },
+      "behavior": {
+        "title": "Könyvtár viselkedése",
+        "thumbnailClicks": {
+          "label": "Indexkép kattintások",
+          "hint": "Válaszd ki, hogy mi történjen, ha rács- és listanézetből nyit meg egy könyvet",
+          "readFirst": "Olvasás először",
+          "readFirstHint": "Nyissa meg az olvasót, ha létezik olvasható fájl",
+          "openDetails": "Részletek megnyitása",
+          "openDetailsHint": "Ugrás a könyv részletei oldalra a rácsból és a miniatűrök listájából"
+        },
+        "filterPreview": {
+          "label": "Szűrő előnézetének megjelenítése alapértelmezés szerint",
+          "hint": "Az aktív szűrő kibontása és az összegző rendezés smartScope megnyitásakor"
+        },
+        "collapseSeries": {
+          "label": "Sorozatok összecsukása alapértelmezés szerint",
+          "hint": "Azonos sorozat könyveinek csoportosítása egyetlen kártyára könyvtári és gyűjteményi nézetekben"
+        }
+      },
+      "icons": {
+        "title": "Egyéni ikonok",
+        "uploadIcons": "Ikonok feltöltése",
+        "uploadedCount": "{count, plural, =0 {nincsenek feltöltött ikonok} one {# feltöltött ikon} other {# feltöltött ikon}}",
+        "searchPlaceholder": "Ikonok keresése",
+        "sort": {
+          "newest": "Legújabb",
+          "name": "Név"
+        },
+        "selectedCount": "{count, plural, one {# kiválasztva} other {# kiválasztva}}",
+        "clear": "Törlés",
+        "deleteSelected": "Kijelöltek törlése",
+        "loading": "Ikonok betöltése...",
+        "emptySearch": "Egyetlen ikon sem felel meg a keresésnek.",
+        "emptyNoIcons": "Még nincsenek feltöltve egyéni ikonok.",
+        "namePlaceholder": "Név",
+        "checkingUsage": "Használat ellenőrzése...",
+        "usedBy": "{count} által használva",
+        "notUsedYet": "Még nem használt",
+        "rename": "Átnevez",
+        "replace": "Csere",
+        "usage": {
+          "libraries": "{count, plural, =0 {nincsenek könyvtárak} one {# könyvtár} other {# könyvtár}}",
+          "collections": "{count, plural, =0 {nincsenek gyűjtemények} one {# gyűjtemény} other {# gyűjtemény}}",
+          "smartScopes": "{count, plural, =0 {nincsenek intelligens hatókörök} one {# intelligens hatókör} other {# intelligens hatókör}}"
+        },
+        "confirm": {
+          "deleteOne": "Törli a „{name}” elemet? A meglévő alkalmazások ikonja visszaáll az alapértelmezettre.",
+          "deleteMany": "{count, plural, =0 {Törlöd a nem létező ikonokat?} one {# ikon törlése? A meglévő alkalmazások visszaállnak az alapértelmezett ikonra.} other {# ikon törlése? A meglévő alkalmazások visszaállnak az alapértelmezett ikonra.}}"
+        },
+        "toasts": {
+          "saved": "Ikon mentve",
+          "updated": "Ikon frissítve",
+          "deleted": "Ikon törölve",
+          "bulkDeleted": "{count, plural, =0 {Nem létező ikonok törölve} one {# ikon törölve} other {# ikon törölve}}",
+          "bulkDeletePartial": "Törölve {deleted}, {failed} sikertelen"
+        },
+        "errors": {
+          "load": "Nem sikerült betölteni az ikonokat",
+          "save": "Nem sikerült menteni az ikonokat",
+          "replace": "Nem sikerült cserélni az ikonokat",
+          "delete": "Nem sikerült törölni az ikont",
+          "bulkDelete": "Nem sikerült törölni az ikonokat"
+        }
+      },
+      "tabs": {
+        "theme": "Téma",
+        "book-covers": "Könyvborítók",
+        "icons": "Ikonok",
+        "layout": "Elrendezés",
+        "behavior": "Működés",
+        "language": "Nyelv"
+      }
+    },
+    "account": {
+      "title": "Fiók",
+      "subtitle": "Személyes profilbeállításaid kezelése.",
+      "subtitleAll": "Kezeld a profilodat és az értesítési beállításokat.",
+      "tabs": {
+        "profile": "Profil",
+        "privacy": "Adatvédelem és megosztás",
+        "notifications": "Értesítések",
+        "restrictions": "Korlátozások"
+      },
+      "demoRestricted": {
+        "cannotEdit": "A demókorlátozásos fiók nem szerkesztheti a fiókbeállításokat",
+        "notice": "Demókorlátozásos fiók: a profil, a jelszó, az avatár és a kapcsolt identitások szerkesztése le van tiltva."
+      },
+      "feedback": {
+        "unsavedChanges": "A változtatások nincsenek elmentve",
+        "discard": "Elvetés"
+      },
+      "profile": {
+        "securityHeading": "Profil és biztonság",
+        "username": "Felhasználónév",
+        "fullName": "Teljes név",
+        "email": "Email",
+        "emailHint": "Az e-mail cím módosításához forduljon egy adminisztrátorhoz.",
+        "save": "Profil mentése",
+        "saving": "Mentés...",
+        "changePassword": "Jelszó módosítása",
+        "accountType": "Fiók típusa:",
+        "accountTypeOidc": "OIDC / SSO",
+        "accountTypeShared": "Megosztva",
+        "accountTypeLocal": "Helyi",
+        "nameRequired": "Név megadása kötelező",
+        "updateFailed": "Nem sikerült frissíteni a profilt",
+        "updated": "Profil frissítve",
+        "usernameHint": "A felhasználóneved nem módosítható.",
+        "passwordHint": "Módosítsd a bejelentkezéshez használt jelszót.",
+        "passwordHintOidc": "A jelszavadat az identitásszolgáltatód kezeli.",
+        "passwordHintShared": "A megosztott fiókokba egy magic linken keresztül lehet bejelentkezni, és nincs jelszó."
+      },
+      "readingPreferences": {
+        "title": "Olvasási beállítások",
+        "timezoneHint": "Az időzónát az időérzékeny trófeákhoz használják, mint például a Korai madár és az Egész éjszakás.",
+        "timezone": "Időzóna",
+        "save": "Beállítások mentése",
+        "enableAchievements": "Trófeák engedélyezése",
+        "enableAchievementsHint": "Kövesd nyomon az elért eredmények előrehaladását és jelenítsd meg az elért eredményekkel kapcsolatos felületet. Kezeld az elért eredményekkel kapcsolatos értesítéseket külön az Értesítések részben.",
+        "achievementsEnabled": "Trófeák engedélyezve",
+        "achievementsDisabled": "Trófeák letiltva",
+        "achievementsSaveFailed": "Nem sikerült frissíteni a trófeákra vonatkozó beállításokat"
+      },
+      "preferences": {
+        "saveFailed": "Nem sikerült menteni a beállításokat",
+        "saved": "Beállítások elmentve"
+      },
+      "avatar": {
+        "title": "Profilkép",
+        "unknownUser": "Ismeretlen felhasználó",
+        "formatHint": "PNG/JPEG/WEBP maximális méret {size} MB",
+        "upload": "Kép feltöltése",
+        "replace": "Kép cseréje",
+        "uploading": "Feltöltés...",
+        "remove": "Kép eltávolítása",
+        "removing": "Eltávolítás...",
+        "updated": "Profilkép frissítve",
+        "uploadFailed": "Nem sikerült feltölteni a profilképet",
+        "removed": "Profilkép eltávolítva",
+        "removeFailed": "Nem sikerült eltávolítani a profilképet",
+        "removeConfirm": {
+          "title": "Eltávolítod a profilképet?",
+          "description": "Az avatárod eltávolításra kerül, és a helyére monogram kerül.",
+          "confirm": "Eltávolítás"
+        }
+      },
+      "connectedAccounts": {
+        "title": "Csatlakoztatott fiókok",
+        "unlink": "Leválasztás",
+        "unlinking": "Leválasztás...",
+        "linkAdditional": "További szolgáltatók összekapcsolása:",
+        "linkProvider": "{provider} összekapcsolása",
+        "redirecting": "Átirányítás...",
+        "noneConfigured": "Nincsenek OIDC-szolgáltatók konfigurálva. Kérjen meg egy adminisztrátort az SSO beállítására.",
+        "linkStateFailed": "Nem sikerült létrehozni az összekapcsolás állapotát",
+        "startLinkFailed": "Nem sikerült elindítani az OIDC-kapcsolatot",
+        "unlinkFailed": "Nem sikerült leválasztani",
+        "unlinked": "Azonosító leválasztva",
+        "unlinkIdentityFailed": "Nem sikerült leválasztani az azonosítót",
+        "unlinkDialog": {
+          "title": "Leválasztod a {provider} azonosítót?",
+          "description": "Írd be a jelszavad a megerősítéshez. Többé nem fogsz tudni bejelentkezni ezzel a szolgáltatóval.",
+          "currentPassword": "Jelenlegi jelszó"
+        },
+        "description": "Jelentkezz be egy, ehhez a fiókhoz kapcsolt külső identitásszolgáltatóval.",
+        "unlinkAria": "{provider} leválasztása"
+      },
+      "tour": {
+        "title": "Útmutató túra",
+        "description": "Játszd le újra az alkalmazás főbb funkcióit kiemelő útmutatót.",
+        "action": "Túra megismétlése"
+      },
+      "restrictions": {
+        "none": {
+          "title": "Nincsenek tartalomkorlátozások",
+          "description": "Fiókod teljes hozzáféréssel rendelkezik a hozzárendelt könyvtáraidban található összes tartalomhoz."
+        },
+        "banner": "A fiókodra tartalomkorlátozásokat állított be egy adminisztrátor. Előfordulhat, hogy egyes könyvek nem láthatók számodra.",
+        "allowedTags": {
+          "title": "Engedélyezett címkék",
+          "description": "Csak azok a könyvek jelennek meg, amelyek legalább egy ilyen címkével rendelkeznek."
+        },
+        "blockedTags": {
+          "title": "Blokkolt címkék",
+          "description": "Az ilyen címkékkel ellátott könyvek rejtve vannak előled."
+        },
+        "allowedGenres": {
+          "title": "Engedélyezett műfajok",
+          "description": "Csak azok a könyvek jelennek meg, amelyek legalább egy ilyen műfajt tartalmaznak."
+        },
+        "blockedGenres": {
+          "title": "Blokkolt műfajok",
+          "description": "Az ilyen műfajok bármelyikébe tartozó könyvek rejtve vannak előled."
+        }
+      },
+      "groups": {
+        "profile": "Profil",
+        "preferences": "Beállítások",
+        "security": "Biztonság és hozzáférés"
+      }
+    },
+    "magicLinks": {
+      "title": "Magic linkek",
+      "subtitle": "Hozz létre megosztható bejelentkezési hivatkozásokat a megosztott fiókokhoz.",
+      "createLink": "Link létrehozása",
+      "noSharedAccounts": "Nem található megosztott fiók",
+      "noSharedAccountsHint": "Először hozz létre egy megosztott fiókot a {usersPage} oldalon, hogy magic linkeket generálhass.",
+      "activeLinks": "Aktív linkek",
+      "inactiveLinks": "Inaktív linkek",
+      "paused": "Szüneteltetve",
+      "deletedUser": "Törölt felhasználó",
+      "expiredPrefix": "Lejárt ",
+      "never": "Nincs rögzített tevékenység",
+      "noExpiry": "Nincsen lejárati idő",
+      "expired": "Lejárt",
+      "expiresOn": "Lejárat {date}",
+      "revokedOn": "Visszavonva {date}",
+      "expiredOn": "Lejárt {date}",
+      "usesCount": "{count, plural, =0 {nincs használatban} one {egy használat} other {# használat}}",
+      "copied": "Másolva!",
+      "copyLink": "Link másolása",
+      "pause": "Szünet",
+      "resume": "Folytatás",
+      "revoke": "Visszavon",
+      "revoking": "Visszavonás...",
+      "emptyState": "Még nincsenek létrehozva magic linkek. Kattints a „{action}” gombra egy megosztható bejelentkezési URL létrehozásához.",
+      "columns": {
+        "label": "Címke",
+        "account": "Fiók",
+        "createdBy": "Létrehozta",
+        "expires": "Lejárati idő",
+        "uses": "Használat",
+        "created": "Létrehozva",
+        "status": "Állapot",
+        "totalUses": "Összes használat",
+        "actions": "Műveletek"
+      },
+      "createDialog": {
+        "title": "Magic link létrehozása",
+        "description": "Megosztható bejelentkezési URL létrehozása egy megosztott fiókhoz.",
+        "sharedAccount": "Megosztott fiók",
+        "selectAccount": "Válassz ki egy megosztott fiókot",
+        "label": "Címke",
+        "labelPlaceholder": "pl. demó link a konferenciához",
+        "expiresAt": "Lejárat ideje",
+        "optional": "(opcionális)",
+        "create": "Létrehoz",
+        "creating": "Létrehozás..."
+      },
+      "revokeDialog": {
+        "title": "Visszavonod a magic linket?",
+        "description": "Ez azonnal érvényteleníted a kapcsolatot, és megszakítod az összes aktív munkamenetet a csatolt fiókhoz."
+      },
+      "errors": {
+        "create": "Nem sikerült létrehozni",
+        "copy": "A magic link másolása nem sikerült",
+        "update": "A magic link frissítése nem sikerült",
+        "revoke": "A magic link visszavonása nem sikerült"
+      },
+      "usersPage": "Felhasználók oldal",
+      "emptyTitle": "Még nincs magic link létrehozva",
+      "emptyHint": "Kattints a „{action}” gombra egy megosztható bejelentkezési URL létrehozásához.",
+      "noActiveTitle": "Nincsenek aktív magic linkek",
+      "noActiveHint": "Az oldalhoz generált összes magic link lejárt vagy visszavonták.",
+      "copyLinkAria": "Másolja ki a {label} linkjét",
+      "pauseAria": "{label} szüneteltetése",
+      "resumeAria": "{label} folytatása",
+      "revokeAria": "{label} visszavonása",
+      "lastUsedLabel": "Utoljára használva {date}"
+    },
+    "oidc": {
+      "title": "OIDC / SSO",
+      "subtitle": "OpenID Connect szolgáltatók kezelése egyszeri bejelentkezéshez.",
+      "providers": "Szolgáltatók",
+      "addProvider": "Szolgáltató hozzáadása",
+      "editProvider": "Szolgáltató szerkesztése",
+      "configureNew": "Új OIDC-szolgáltató konfigurálása.",
+      "editing": "{slug} szerkesztése",
+      "enabled": "Engedélyezve",
+      "disabled": "Letiltva",
+      "empty": {
+        "title": "Még nincs szolgáltató",
+        "description": "Adj hozzá egy OIDC-szolgáltatót a felhasználók egyszeri bejelentkezésének engedélyezéséhez."
+      },
+      "form": {
+        "status": "Állapot",
+        "enableProvider": "Szolgáltató engedélyezése",
+        "enableProviderHint": "Jelenítse meg ezt a szolgáltatót a bejelentkezési oldalon.",
+        "identity": "Szolgáltató identitása",
+        "slug": "Slug",
+        "slugHint": "Egyedi azonosító (kisbetűk, kötőjelek). Később nem módosítható.",
+        "displayName": "Megjelenítendő név",
+        "displayNameHint": "A bejelentkezés gombon látható.",
+        "iconUrl": "Ikon URL",
+        "iconUrlHint": "Opcionális logó, amely a bejelentkezés gomb mellett látható.",
+        "iconPreviewAlt": "ikon előnézet",
+        "connection": "Kapcsolat",
+        "issuerUri": "Kibocsátó URI",
+        "issuerUriHint": "A szolgáltató alap URL-címe.",
+        "test": "Teszt",
+        "testing": "Tesztelés...",
+        "clientId": "Client ID",
+        "clientSecret": "Client Secret",
+        "clientSecretPlaceholder": "Hagyd üresen a meglévő megtartásához",
+        "scopes": "Hatókör",
+        "claimMapping": "Hozzárendelés lekérése",
+        "previewClaims": "Lekérések előnézete",
+        "redirecting": "Átirányítás...",
+        "mappedClaims": "Hozzárendelt lekérések",
+        "rawClaims": "Nyers lekérések",
+        "usernameClaim": "Felhasználónév lekérése",
+        "nameClaim": "Név lekérése",
+        "emailClaim": "Email lekérése",
+        "groupsClaim": "Csoport lekérése",
+        "autoProvisioning": "Automatikus létrehozás",
+        "autoProvisionUsers": "Felhasználók automatikus létrehozása",
+        "autoProvisionUsersHint": "Fiókok létrehozása az első OIDC bejelentkezéskor, ha a felhasználó nem létezik.",
+        "allowLocalLinking": "Helyi fiókösszekapcsolás engedélyezése",
+        "allowLocalLinkingHint": "OIDC-identitás összekapcsolása egy meglévő helyi fiókkal felhasználónév-egyezés alapján.",
+        "defaultPermissions": "Alapértelmezett engedélyek",
+        "defaultPermissionsHint": "Az új felhasználóknak az első OIDC-bejelentkezéskor megadott engedélyek.",
+        "createProvider": "Szolgáltató létrehozása",
+        "saveChanges": "Változtatások mentése",
+        "saving": "Mentés...",
+        "deleteProvider": "Szolgáltató törlése",
+        "deleting": "Törlés..."
+      },
+      "test": {
+        "connected": "Csatlakoztatva - {issuer}",
+        "connectionFailed": "Csatlakozás sikertelen",
+        "privateIssuerAddress": "A kibocsátó URL-címe egy privát vagy helyi hálózati címre van feloldva, ezért a szerver megtagadta a csatlakozást. Állítsa be az OIDC_ALLOW_LOCAL_ISSUERS=true értéket a BookOrbit szerveren az engedélyezéshez.",
+        "hide": "Elrejt",
+        "details": "Részletek",
+        "supported": "támogatott",
+        "notSupported": "nem támogatott"
+      },
+      "groupMappings": {
+        "title": "Csoport hozzárendelései",
+        "noPermission": "Nincs engedélyed",
+        "empty": "Nincsenek konfigurált csoporthozzárendelések.",
+        "addMapping": "Hozzárendelés hozzáadása",
+        "claimPlaceholder": "OIDC csoportigény (pl. adminisztrátorok)",
+        "add": "Hozzáad",
+        "adding": "Hozzáadás..."
+      },
+      "toasts": {
+        "providerCreated": "Szolgáltató létrehozva",
+        "providerSaved": "Szolgáltató mentve",
+        "providerDeleted": "Szolgáltató törölve",
+        "mappingAdded": "Csoport-hozzárendelés hozzáadva",
+        "mappingRemoved": "Csoport-hozzárendelés eltávolítva"
+      },
+      "errors": {
+        "loadProvider": "Nem sikerült betölteni a szolgáltatót",
+        "createProvider": "Nem sikerült létrehozni a szolgáltatót",
+        "save": "Mentés sikertelen",
+        "delete": "Törlés sikertelen",
+        "deleteProvider": "Nem sikerült törölni a szolgáltatót",
+        "requestFailed": "Kérés sikertelen",
+        "previewState": "Nem sikerült előnézeti állapotot generálni",
+        "startPreview": "Nem sikerült elindítani az előnézetet",
+        "addMapping": "Nem sikerült hozzáadni a hozzárendelést",
+        "removeMapping": "Nem sikerült eltávolítani a csoport-hozzárendelést"
+      }
+    },
+    "admin": {
+      "title": "Adminisztrátor",
+      "subtitle": "Felhasználók és hitelesítési beállítások kezelése.",
+      "system": {
+        "title": "Rendszer",
+        "subtitle": "Fájlrendszerezési, betöltési és karbantartási beállítások."
+      },
+      "maintenance": {
+        "title": "Karbantartás",
+        "subtitle": "Háttérfeladatok, rendszerindexek és karbantartási műveletek kezelése.",
+        "importGroup": "Importálás",
+        "recommendationsGroup": "Ajánlások",
+        "achievementsGroup": "Trófeák",
+        "updatesGroup": "Frissítések",
+        "bookloreImportConfigured": "Booklore importálás konfigurálva",
+        "importLibraryData": "Könyvtáradatok importálása",
+        "migrationConfigured": "Migrálási forrás konfigurálva",
+        "migrationRunning": "Migrálás folyamatban",
+        "migrationCompleted": "Migrálás kész",
+        "migrationFailed": "Migrálás sikertelen",
+        "importDescription": "Könyvek, metaadatok és olvasási folyamat egyszeri importálása egy korábbi Booklore telepítésből.",
+        "migrationDescription": "Könyvek, metaadatok és olvasási folyamat egyszeri importálása egy másik könyvtár alkalmazásból.",
+        "configuredDescription": "Forrás: {name}. Még nem futott migráció - folytassa a beállítást az importálás futtatásához.",
+        "runningDescription": "Szakasz: {stage} - elkezdődött {started}",
+        "completedDescription": "Feladó: {name} - teljesítve: {date}",
+        "migrationErrorGeneric": "Hiba történt a migrálás során.",
+        "stageInitializing": "inicializálás",
+        "recently": "nemrég",
+        "getStarted": "Kezdj bele",
+        "continueSetup": "Beállítás folytatása",
+        "viewDetails": "Részletek mutatása",
+        "refreshRecommendationIndex": "Javaslatok indexének frissítése",
+        "refreshRecommendationHint": "Frissítse az ajánlómotort a legújabb könyvtármódosításokkal. Ez a folyamat a háttérben fut.",
+        "booksQueuedForProcessing": "{count, plural, =0 {nincsenek feldolgozásra váró könyvek} one {# könyv vár feldolgozásra} other {# könyv vár feldolgozásra}}",
+        "run": "Futtatás",
+        "running": "Folyamatban...",
+        "backfillAchievements": "Trófeák pótlása",
+        "backfillAchievementsHint": "Értékeld újra az összes felhasználó által megszerzett trófeát.",
+        "backfillResult": "Felhasználó {users} feldolgozva; trófea {awards} megadva.",
+        "runBackfill": "Pótlás futtatása",
+        "checkForUpdates": "Frissítések keresése",
+        "checkForUpdatesHint": "Automatikusan ellenőrzi a GitHubot indításkor új kiadásokért, és megjeleníti az oldalsávon az elérhető jelzőt.",
+        "updateChecksEnabled": "Frissítési ellenőrzések engedélyezve",
+        "updateChecksDisabled": "Frissítési ellenőrzések letiltva",
+        "updateSettingFailed": "Nem sikerült frissíteni a beállítást",
+        "booksQueuedForEmbedding": "{count, plural, =0 {nincsenek beágyazásra váró könyvek} one {# könyv vár beágyazásra} other {# könyv vár beágyazásra}}",
+        "failed": "Sikertelen",
+        "unknownError": "Ismeretlen hiba",
+        "rebuildEmbeddingsFailed": "Nem sikerült újraépíteni a beágyazásokat: {error}",
+        "achievementBackfillConfirm": "Futtatod a trófea pótlást az összes felhasználó összes trófeájára vonatkozóan? Ez eltarthat egy ideig.",
+        "achievementBackfillComplete": "Trófea pótlás befejezve: {count} trófea megadva",
+        "backfillRunFailed": "Pótlás futtatása sikertelen",
+        "achievementBackfillFailed": "Trófea pótlás futtatása sikertelen: {error}",
+        "uploadsGroup": "Feltöltések",
+        "maxUploadSize": "Maximális feltöltési fájlméret",
+        "maxUploadSizeHint": "Konfiguráld a rendszerbe feltölthető fájlok maximális méretét.",
+        "save": "Mentés",
+        "uploadSizeInvalid": "A feltöltési méretkorlátnak nagyobbnak kell lennie, mint 0",
+        "uploadSizeUpdated": "Feltöltési méretkorlát frissítve"
+      },
+      "migration": {
+        "title": "Migrálás",
+        "subtitle": "Egyszeri Booklore importálás: forrás csatlakoztatása, felhasználók leképezése, próbaüzem, migrálás indítása és jelentés exportálása.",
+        "genericSubtitle": "Egyszeri könyvtár importálás: forrás csatlakoztatása, felhasználók leképezése, próbaüzem, migrálás indítása és jelentés exportálása.",
+        "progress": "Előrehaladás",
+        "stepSourceConnection": "Forráskapcsolat",
+        "stepUserPathMapping": "Felhasználó és elérési út leképzése",
+        "stepDryRun": "Próbaüzem",
+        "stepDryRunTitle": "Próbaüzem",
+        "stepRunMigration": "Migrálás futtatása",
+        "stepReport": "Jelentés",
+        "stepReportTitle": "Migrálási jelentés",
+        "subtitleSource": "Konfigurálja az adatbázis-kapcsolatot a forrás Booklore-példányhoz.",
+        "genericSubtitleSource": "Konfigurálja az adatbázis-kapcsolatot a forrás könyvtár alkalmazáshoz.",
+        "subtitleMappings": "Forrásfelhasználók és célfelhasználók közötti megfeleltetés, valamint fájlelérési utak lefordítása.",
+        "subtitleDryRun": "Az élő migráció futtatása előtt tekintsd meg az importálni kívánt elemek előnézetét.",
+        "subtitleRun": "Indítsd el az élő importálást, és figyeld a folyamatot.",
+        "subtitleReport": "Tekintsd át az importált adatokat, és exportálj részletes jelentést.",
+        "continueToMappings": "Tovább a leképzéshez",
+        "continueToDryRun": "Tovább a próbaüzemhez",
+        "continueToMigration": "Tovább a migráláshoz",
+        "viewReport": "Jelentés megtekintése",
+        "badgeValidated": "Ellenőrizve",
+        "badgeSaved": "Mentve",
+        "badgeUpToDate": "Naprakész",
+        "badgeCompleted": "Kész",
+        "badgeRunning": "Folyamatban",
+        "badgeFailed": "Sikertelen",
+        "mediaPathRequired": "Kötelező a könyvborítók migrálásához.",
+        "mediaPathAbsolute": "Használj abszolút elérési utat (például: /books). A relatív elérési utak nem támogatottak.",
+        "mediaPathConfigured": "Borító importálási útvonal konfigurálva. A Kapcsolat tesztelése funkcióval ellenőrizhető a hozzáférés és a Booklore képek mappaszerkezete.",
+        "issueSaveSource": "Forráskapcsolat-beállítások mentése",
+        "issueValidateSource": "Forráskapcsolat ellenőrzése",
+        "issueSaveMappings": "Felhasználói és elérési út-hozzárendelések mentése",
+        "issueSavePathMappings": "Mentsd el az útvonal-hozzárendeléseket az érvényesítéshez",
+        "issueFreshDryRun": "Futtass friss próbaüzemet",
+        "issueResolveDuplicates": "Ismétlődő célkönyv-egyezések feloldása a próbaüzemben",
+        "issueWaitActiveRun": "Várd meg, amíg az aktív futtatás befejeződik",
+        "sourceRecordId": "Forrásrekord-azonosító #{id}",
+        "byAuthorWithId": "{author} által (Azonosító: {id})",
+        "filePathWithId": "{path} (Azonosító: {id})",
+        "bookloreSourceId": "Booklore forrásazonosító: {id}",
+        "libraryBookNum": "Könyvtári könyv #{id}",
+        "errorInitialize": "Nem sikerült inicializálni a migrálási beállításokat",
+        "errorLoadSourceTypes": "Nem sikerült betölteni a támogatott migrálási forrástípusokat",
+        "errorLoadTargetUsers": "Nem sikerült betölteni a célfelhasználókat",
+        "errorLoadLibraryFolders": "Nem sikerült betölteni a célkönyvtár mappáit",
+        "noSourceUsersReturned": "Nem találtunk forrásfelhasználókat",
+        "userMappingSuggestionsLoaded": "Felhasználói hozzárendelési javaslatok betöltve",
+        "errorLoadSuggestions": "Nem sikerült betölteni a felhasználói hozzárendelési javaslatokat",
+        "requiredFields": "A gazdagép, a felhasználó, az adatbázis és a forrás neve kötelező",
+        "connectionTestPassedWithWarnings": "A kapcsolatteszt figyelmeztetésekkel sikerült",
+        "connectionTestPassedWithCount": "A kapcsolatteszt {count} figyelmeztetéssel sikerült. Első: {first}",
+        "connectionTestPassed": "Csatlakozási teszt sikeres",
+        "connectionOkMissingTables": "A kapcsolat rendben van, de {count} szükséges tábla hiányzik",
+        "cannotTestMediaPathActiveRun": "Nem lehet tesztelni az adathordozó elérési útját, amíg egy futtatás aktív",
+        "mediaRootPathRequiredCover": "A borító importálásához média gyökérkönyvtárának megadása szükséges.",
+        "useAbsolutePath": "Használjon abszolút elérési utat (például: /books).",
+        "mediaPathVerified": "Médiaútvonal ellenőrizve.",
+        "mediaPathValidReadable": "A média elérési útja érvényes és olvasható",
+        "mediaPathValidationFailed": "A média elérési útjának érvényesítése sikertelen.",
+        "connectionFailedBeforeMediaPath": "A csatlakozási teszt sikertelen volt a médiaútvonal-érvényesítés befejezése előtt.",
+        "cannotModifySourceActiveRun": "A forrás nem módosítható, amíg egy futtatás aktív",
+        "sourceSavedValidatedWarnings": "Forrás mentve és validálva {count} figyelmeztetéssel",
+        "sourceSavedValidated": "Forrás mentve és érvényesítve",
+        "errorSaveValidateSource": "Nem sikerült menteni vagy érvényesíteni a forrást",
+        "cannotSaveMappingsActiveRun": "Nem lehet menteni a hozzárendeléseket, amíg egy futtatás aktív",
+        "saveSourceFirst": "Először mentsd el a forrást",
+        "connErrorUnknownDatabase": "Az adatbázis nem található. Ellenőrizd az adatbázis nevét.",
+        "connErrorTimeout": "Időtúllépés történt a kapcsolat során. Ellenőrizd a gazdagép és a tűzfal beállításait.",
+        "connErrorGeneric": "Csatlakozás teszt sikertelen",
+        "sourceType": "Forrás típusa",
+        "sourceName": "Forrás neve",
+        "host": "Kiszolgáló",
+        "port": "Port",
+        "user": "Felhasználó",
+        "password": "Jelszó",
+        "passwordSavedPlaceholder": "Mentve - változatlanul hagyva",
+        "passwordEmptyPlaceholder": "Nincs beállítva jelszó",
+        "database": "Adatbázis",
+        "mediaRootPath": "Média gyökérútvonala",
+        "pathOk": "Útvonal rendben",
+        "pathIssue": "Probléma az útvonallal",
+        "testPath": "Útvonal tesztelése",
+        "useTls": "TLS/SSL használata",
+        "testConnection": "Kapcsolat tesztelése",
+        "saveAndValidate": "Mentés és érvényesítés",
+        "sourceValidatedWithWarnings": "Forrás érvényesítve figyelmeztetésekkel",
+        "lastValidationSnapshot": "Utolsó érvényesítési pillanatkép",
+        "sourceVersion": "Forrás verzió: {version}",
+        "unknown": "Ismeretlen",
+        "missingRequiredTables": "Hiányzó kötelező táblák: {tables}",
+        "suggestionsAutoLoad": "A felhasználói javaslatok automatikusan betöltődnek a forrás ellenőrzése után.",
+        "refresh": "Frissítés",
+        "sourceUser": "Forrásfelhasználó",
+        "targetUser": "Célfelhasználó",
+        "doNotImport": "Ne importálja ezt a felhasználót",
+        "noSourceUsersLoaded": "Még nincsenek betöltve forrásfelhasználók.",
+        "noActiveTargetUsers": "Nem találhatók aktív célfelhasználók. Hozzon létre vagy engedélyezzen újra egy BookOrbit felhasználót a leképezés előtt.",
+        "pathPrefixMappings": "Útvonal-előtag-megfeleltetések",
+        "addMapping": "Megfeleltetés hozzáadása",
+        "pathMappingsHelp1": "Az elérési út leképezések a forrásfájlok elérési útjait cél elérési úttá alakítják, így a könyvek a fájl helye alapján egyeztethetők. Például, ha a Booklore könyvtár a fájlokat a következő címen tárolta",
+        "pathMappingsHelp2": "és ugyanazok a fájlok most a következő címen találhatók",
+        "pathMappingsHelp3": ", add hozzá ide ezt a megfeleltetést. A könyveket az ISBN, a fájl hash és a cím/szerző alapján is egyezteti a rendszer, függetlenül az elérési út megfeleltetésektől - az elérési út megfeleltetése csak egy a négy stratégia közül, és nem korlátozza, hogy mely forráskönyvek kerüljenek be a migrálásba.",
+        "noPrefixesFound": "Nem találhatók előtagok - először ellenőrizd a forrást",
+        "selectSourcePrefix": "Forrás előtag kiválasztása...",
+        "selectTargetFolder": "Célmappa kiválasztása...",
+        "remove": "Eltávolítás",
+        "pathValidation": "Útvonal-érvényesítés",
+        "pathValidationMapped": "{total} forráskönyvből {mapped} rendelkezik leképezett útvonallal",
+        "pathValidationUnmatched": "{count} leképezett elérési út nem található a lemezen - ezek a könyvek ISBN / cím egyeztetésre fognak visszaállni",
+        "pathValidationAllMatched": "Mind a {count} leképezett elérési út megtalálható a lemezen",
+        "saveMappings": "Leképezés mentése",
+        "runDryRun": "Próbaüzem futtatása",
+        "matched": "Egyező:",
+        "unresolved": "Megoldatlan:",
+        "duplicateMatches": "Ismétlődő találatok:",
+        "unresolvedSummary": "Megoldatlan összefoglaló",
+        "resolveDuplicateMatches": "Ismétlődő célpont-egyezések feloldása",
+        "resolveDuplicateHint": "Minden célkönyvhöz válassz ki egy forráskönyvet, amelyet megtartasz. Az ajánlott opciók előre kiválasztottak, ha van egyetlen legerősebb egyezés.",
+        "remainingGroups": "Fennmaradó csoportok:",
+        "ofCount": "{count}-ból",
+        "targetBookNum": "Célkönyv #{id}",
+        "recommended": "Ajánlott",
+        "resolveDuplicatesButton": "{count, plural, =0 {# duplikátum feloldása} one {# duplikátum feloldása} other {# duplikátum feloldása}}",
+        "preflightChecks": "Előzetes ellenőrzések",
+        "allChecksPassed": "Minden ellenőrzés sikeresen megtörtént – migrálásra kész",
+        "checkSourceValidated": "Forrás ellenőrizve",
+        "checkSaveValidateSource": "Forráskapcsolat mentése és ellenőrzése",
+        "checkValidateSource": "Forráskapcsolat ellenőrzése",
+        "checkMappingsSaved": "Leképezések mentve",
+        "checkSaveMappings": "Felhasználói és útvonal-leképzések mentése",
+        "checkPathMappingsValidated": "Útvonal-leképezések ellenőrizve",
+        "checkSavePathMappings": "Mentsd el az útvonal-leképzéseket az érvényesítéshez",
+        "checkDryRunUpToDate": "A próbaüzem naprakész",
+        "checkFreshDryRun": "Új próbaüzem futtatása",
+        "startConfirmPrompt": "Ez elindítja az élő migrálást. Biztos vagy benne?",
+        "confirmStart": "Indítás megerősítése",
+        "startMigration": "Migrálás indítása",
+        "cancelRun": "Futtatás megszakítása",
+        "refreshStatus": "Állapot frissítése",
+        "statusPollingStopped": "Az állapotlekérdezés hiba miatt leállt.",
+        "retry": "Újra",
+        "stageLabel": "Szakasz: {stage}",
+        "stageInitializing": "inicializálás",
+        "endedLabel": "Befejezve {date}",
+        "stageCompleted": "Kész",
+        "stageInit": "Inicializálás",
+        "stageSharedOverlays": "Metaadatok importálása",
+        "stageBookCovers": "Borítók importálása",
+        "stageUserState": "Felhasználói adatok importálása",
+        "noRunYet": "Még nem futott migrálás. A kezdéshez hajtsd végre a fenti lépéseket.",
+        "runNum": "#{id} futtatása",
+        "notStarted": "Nincs elkezdve",
+        "reloadReport": "Jelentés újratöltése",
+        "loadFullReport": "Teljes jelentés betöltése",
+        "exportJson": "JSON exportálása",
+        "exportCsv": "CSV exportálása",
+        "migrationFailed": "Migrálás sikertelen",
+        "retryFromLastStage": "Újrapróbálkozás az utolsó befejezett szakasztól",
+        "booksCard": "Könyvek",
+        "metadataOverlaysApplied": "Metaadat-átfedések alkalmazva",
+        "authorMappingsReplaced": "Szerzői leképezések cserélve",
+        "narratorMappingsReplaced": "Narrátor leképezések cserélve",
+        "genreMappingsReplaced": "Műfaj leképezések cserélve",
+        "tagMappingsReplaced": "Címke leképezések cserélve",
+        "coversImported": "Borítók importálva",
+        "coverImportSkipped": "A borító importálása kihagyva - a média gyökérútvonala nincs konfigurálva a forráson",
+        "couldNotMatch": "Nem sikerült egyeztetni",
+        "userDataCard": "Felhasználói adatok",
+        "readingStatuses": "Olvasási állapotok",
+        "readingProgressEntries": "Olvasási folyamat bejegyzései",
+        "audiobookProgressEntries": "Hangoskönyv állapotának bejegyzései",
+        "bookmarksLabel": "Könyvjelzők",
+        "annotationsLabel": "Jegyzetek",
+        "collectionEntries": "Gyűjtemény bejegyzések",
+        "loadFullReportHint": "Kattints a „Teljes jelentés betöltése” gombra, ha a próbaüzem összefoglalóját szeretnéd belefoglalni az exportált jelentésbe.",
+        "completedNoIssues": "A migrálás megoldatlan könyvek vagy hibák nélkül befejeződött.",
+        "matchedBooksHeading": "Egyező könyvek ({count})",
+        "matchedBooksHint": "Ezeket a próbaegyeztetések voltak felhasználva annak eldöntésére, hogy mely könyvtári könyvek kapják meg az importált adatokat.",
+        "sourceBookFallback": "Forrás könyv {id}",
+        "libraryBookFallback": "Könyvtári könyv {id}",
+        "unresolvedBooksHeading": "Megoldatlan könyvek ({count})",
+        "unresolvedBooksHint": "Ezek a könyvek léteznek a forrásban, de nem sikerült őket a könyvtáradban található könyvekkel összepárosítani.",
+        "mappedUsersHeading": "({count}) társított felhasználó",
+        "mappedUsersHint": "A felhasználónkénti összesítések a migrálási tervvel gyorsítótárazott próbafutásból származnak.",
+        "coverImportsFailed": "{count} borító importálása sikertelen. A részletes hibasorok nem tárolódnak.",
+        "backToSetup": "Vissza a beállításokhoz"
+      },
+      "libraries": {
+        "title": "Könyvtárak",
+        "subtitle": "Kezeld médiakönyvtáraidat és indíts tartalom-beolvasást.",
+        "scanAll": "Összes beolvasása",
+        "scanning": "Beolvasás...",
+        "addLibrary": "Könyvtár hozzáadása",
+        "scan": "Beolvasás",
+        "editLibrary": "Könyvtár szerkesztése",
+        "refreshCovers": "Borítók frissítése",
+        "syncMetadataToFiles": "Metaadatok szinkronizálása fájlokhoz",
+        "deleteLibrary": "Könyvtár törlése",
+        "bookCount": "{count, plural, =0 {nincsenek könyvek} one {# könyv} other {# könyv}}",
+        "booksUnit": "{count, plural, one {könyv} other {könyv}}",
+        "folderCount": "{count, plural, =0 {nincsenek mappák} one {# mappa} other {# mappa}}",
+        "fileMode": "Fájl mód",
+        "folderMode": "Mappa mód",
+        "emptyTitle": "Még nincsenek könyvtárak",
+        "emptyHint": "Adj hozzá egy könyvtárat, hogy elkezdhesd rendszerezni a könyveidet.",
+        "addFirstLibrary": "Első könyvtár hozzáadása",
+        "deleteConfirmTitle": "Törlöd a következőt: {name}?",
+        "deleteConfirmBody": "Ez véglegesen eltávolítja az összes könyvet, metaadatot, olvasási folyamatot, könyvjelzőt és jegyzetet ebből a könyvtárból. A művelet nem vonható vissza.",
+        "deleteConfirmTypeName": "Írd be a könyvtár nevét a megerősítéshez:",
+        "deleting": "Törlés...",
+        "deleteLibraryButton": "Könyvtár törlése",
+        "syncConfirmTitle": "Szinkronizálod a metaadatokat a fájlokhoz?",
+        "syncFiles": "Fájlok szinkronizálása",
+        "metadataSynced": "Metaadatok szinkronizálva a fájlokhoz: \"{name}\"",
+        "fileWriteNotEnabled": "A metaadatfájl írása nincs engedélyezve ehhez a könyvtárhoz. Engedélyezd a könyvtár beállításaiban.",
+        "fileSyncFailed": "Fájlszinkronizálás sikertelen: \"{name}\"",
+        "scanStarted": "Keresés megkezdve: \"{name}\"",
+        "scanStartFailed": "A keresés megkezdése sikertelen: \"{name}\"",
+        "refreshCoversFailed": "A borítók frissítése sikertelen: \"{name}\"",
+        "scanStartedAll": "Az összes könyvtár vizsgálata megkezdődött",
+        "librariesFailedToStart": "{count, plural, =0 {nincs olyan könyvtár, amit nem sikerült elindítani} one {# könyvtár indítása sikertelen} other {# könyvtár indítása sikertelen}}",
+        "scansStartFailed": "A keresések megkezdése sikertelen",
+        "libraryCreated": "Könyvtár létrehozva: \"{name}\"",
+        "libraryUpdated": "Könyvtár frissítve: \"{name}\"",
+        "libraryDeleted": "\"{name}\" törölve",
+        "deleteFailed": "Könyvtár törlése sikertelen",
+        "refreshingCovers": "Borítók frissítése {pct}% ({processed}/{total})",
+        "coversRefreshed": "Borítók frissítve ({count} feldolgozva)",
+        "onDiskUnit": "{size} a lemezen",
+        "noFilesIndexed": "Nincsenek indexelt fájlok",
+        "formatEntry": "{format} {count}",
+        "formatOverflow": "{count, plural,one {+# több formátum} other {+# több formátum}}",
+        "extraFolders": "{count, plural,one {+# mappa} other {+# mappa}}",
+        "openLibrary": "{name} megnyitása",
+        "moreActions": "További műveletek ehhez: {name}",
+        "statsFailed": "Nem sikerült betölteni a könyvtárak számát. Minden más ezen az oldalon továbbra is működik.",
+        "filterLabel": "Könyvtárak szűrése",
+        "history": {
+          "status": "Állapot",
+          "statusValue": {
+            "running": "Folyamatban",
+            "completed": "Kész",
+            "failed": "Sikertelen"
+          }
+        },
+        "detail": {
+          "foldersTitle": "Mappák és elrendezés",
+          "metadataTitle": "Metaadatok és olvasás",
+          "accessTitle": "Hozzáférés",
+          "historyTitle": "Keresési előzmények",
+          "path": "Útvonal {index}",
+          "organization": "Szervezet",
+          "excludePatterns": "Minták kizárása",
+          "precedence": "Forrás elsőbbsége",
+          "allowedFormats": "Engedélyezett formátumok",
+          "countsAsStarted": "Elkezdettnek számít",
+          "countsAsFinished": "Befejezettnek számít",
+          "peopleWithAccess": "Hozzáféréssel rendelkezők",
+          "added": "Hozzáadva",
+          "coverShape": "Borító alakja",
+          "coverShapeValue": {
+            "portrait": "2:3 portré",
+            "square": "1:1 négyzet"
+          },
+          "none": "Nincs",
+          "allSupported": "Minden támogatott",
+          "patternCount": "{count, plural,one {#minta} other {# minta}}",
+          "peopleCount": "{count, plural, =0 {Nincsenek kifejezett jogosultságok} one {# személy} other {# személy}}",
+          "historyEmpty": "Ezt a könyvtárat még soha nem szkennelték be.",
+          "historyFailed": "Nem sikerült betölteni a könyvtár szkennelési előzményeit."
+        },
+        "scannedAt": "{time} alkalommal szkennelve",
+        "detailRegion": "{name} részletei"
+      },
+      "authorEnrichment": {
+        "configuration": "Beállítások",
+        "saving": "Mentés...",
+        "running": "Folyamatban...",
+        "runEligibleShort": "Futtatásra jogosult",
+        "runAllShort": "Összes futtatása",
+        "enableTitle": "Automatikus szerzői bővítés engedélyezése",
+        "enableHint": "Szerzői életrajzok és profilfotók automatikus lekérése könyvek hozzáadásakor vagy frissítésekor.",
+        "triggerOnImportTitle": "Importáláskor aktiválódó",
+        "triggerOnImportHint": "A szerzők sorba állítása a bővítéshez, amikor a könyvek először kerülnek fel a könyvtárba.",
+        "eligibilityTitle": "Jogosultsági feltételek",
+        "eligibilityHint": "Egy szerző akkor jogosult, ha megfelel bármelyik engedélyezett feltételnek.",
+        "neverEnrichedTitle": "Még nem volt bővítés",
+        "neverEnrichedHint": "Olyan szerzők bővítése, akik korábban még nem voltak bővítve.",
+        "missingBioTitle": "Hiányzó életrajz",
+        "missingBioHint": "Bővítés, ha a szerzőnek nincs életrajza.",
+        "missingPhotoTitle": "Hiányzó fotó",
+        "missingPhotoHint": "Bővítés, ha a szerzőnek nincs fotója.",
+        "runForEligibleAuthors": "Futtatás a megfelelő szerzőkre",
+        "eligibleCount": "~{count} megfelelő",
+        "runForAllAuthors": "Futtatás az összes szerzőre",
+        "saved": "Szerzői bővítési beállítások mentve",
+        "saveFailed": "Szerzői bővítési beállítások mentése sikertelen"
+      },
+      "scoreWeights": {
+        "table": {
+          "weight": "Súly",
+          "share": "Megosztott pontozás",
+          "versusDefault": "Módosítás"
+        },
+        "groups": {
+          "core": "Mag",
+          "publishing": "Kiadás",
+          "classification": "Osztályozás"
+        }
+      }
+    }
   }
 }

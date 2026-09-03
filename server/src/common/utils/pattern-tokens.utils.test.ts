@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { buildPatternTokens } from './pattern-tokens.utils';
+import { buildPatternTokens, genreFromFolderPath } from './pattern-tokens.utils';
 
 describe('pattern-tokens.utils', () => {
   describe('buildPatternTokens', () => {
@@ -107,6 +107,38 @@ describe('pattern-tokens.utils', () => {
 
       expect(legacy['seriesIndex']).toBe('03');
       expect(malformed['seriesIndex']).toBeUndefined();
+    });
+
+    it('includes the genre token when a genre is given', () => {
+      const tokens = buildPatternTokens({ metadata, originalStem: 'dune', format: 'epub', genre: 'history' });
+      expect(tokens['genre']).toBe('history');
+    });
+
+    it('omits the genre token when no genre is given', () => {
+      expect(buildPatternTokens({ metadata, originalStem: 'dune', format: 'epub' })['genre']).toBeUndefined();
+      expect(buildPatternTokens({ metadata, originalStem: 'dune', format: 'epub', genre: '' })['genre']).toBeUndefined();
+      expect(buildPatternTokens({ metadata, originalStem: 'dune', format: 'epub', genre: null })['genre']).toBeUndefined();
+    });
+  });
+
+  describe('genreFromFolderPath', () => {
+    it('extracts the genre after the leading books prefix for a per-book subfolder path', () => {
+      expect(genreFromFolderPath('/books/books/history/Gọng Kềm Lịch Sử - Bùi Diễm/Gọng Kềm Lịch Sử - Bùi Diễm.epub')).toBe('history');
+    });
+
+    it('extracts the genre after the leading books prefix for a flattened path', () => {
+      expect(genreFromFolderPath('/books/books/history/Gọng Kềm Lịch Sử - Bùi Diễm.epub')).toBe('history');
+    });
+
+    it('returns undefined when nothing remains after the books prefix', () => {
+      expect(genreFromFolderPath('/books/books')).toBeUndefined();
+      expect(genreFromFolderPath('/books')).toBeUndefined();
+    });
+
+    it('returns undefined for an empty or missing path', () => {
+      expect(genreFromFolderPath('')).toBeUndefined();
+      expect(genreFromFolderPath(null)).toBeUndefined();
+      expect(genreFromFolderPath(undefined)).toBeUndefined();
     });
   });
 });

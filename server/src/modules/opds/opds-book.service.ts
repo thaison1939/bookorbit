@@ -119,6 +119,7 @@ export interface OpdsManifestFileRow {
 export interface OpdsManifestBookRow {
   id: number;
   libraryName: string;
+  folderPath: string;
   title: string;
   subtitle: string | null;
   authors: string[];
@@ -369,6 +370,7 @@ export class OpdsBookService {
       .map((row) => ({
         id: row.id,
         libraryName: row.libraryName,
+        folderPath: row.folderPath,
         title: row.title ?? row.folderPath.split('/').pop() ?? 'Untitled',
         subtitle: row.subtitle,
         authors: authorsByBook.get(row.id) ?? [],

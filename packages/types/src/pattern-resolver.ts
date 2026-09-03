@@ -3,7 +3,7 @@ export const DEFAULT_UPLOAD_PATTERN_BOOK_PER_FILE =
 export const DEFAULT_UPLOAD_PATTERN_BOOK_PER_FOLDER =
   "<{authors:first}|Unknown Author>/<{series}/><{seriesIndex}. ><{title}|{originalFilename}>< ({year})>/<{seriesIndex}. ><{title}|{originalFilename}>< ({year})>";
 export const DEFAULT_DOWNLOAD_PATTERN = "{originalFilename}";
-export const DEFAULT_KOREADER_DEVICE_PATTERN = "<Series/{series}/|Standalone/{authors:first} - ><{seriesIndex:fixed2} - >{title}";
+export const DEFAULT_KOREADER_DEVICE_PATTERN = "<Series/{series}/|{genre}/>{title} - {authors:first}";
 
 export const EXAMPLE_PATTERN_METADATA: Record<string, string> = {
   title: "Neuromancer",
@@ -13,6 +13,7 @@ export const EXAMPLE_PATTERN_METADATA: Record<string, string> = {
   year: "1984",
   series: "Sprawl",
   seriesIndex: "01",
+  genre: "Science Fiction",
   language: "English",
   publisher: "Ace Books",
   isbn: "9780441569595",
@@ -29,6 +30,7 @@ export const PATTERN_TOKENS = [
   { token: "year", description: "Publication year" },
   { token: "series", description: "Series name" },
   { token: "seriesIndex", description: "Series index (zero-padded)" },
+  { token: "genre", description: "Genre (top folder segment)" },
   { token: "publisher", description: "Publisher" },
   { token: "isbn", description: "ISBN-13" },
   { token: "language", description: "Language" },

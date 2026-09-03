@@ -8,7 +8,7 @@ import type { ConfigType } from '@nestjs/config';
 import type { FastifyReply } from 'fastify';
 
 import { DEFAULT_KOREADER_DEVICE_PATTERN, resolveUploadPath } from '@bookorbit/types';
-import { buildPatternTokens } from '../../common/utils/pattern-tokens.utils';
+import { buildPatternTokens, genreFromFolderPath } from '../../common/utils/pattern-tokens.utils';
 import type {
   KoreaderCatalogBookDetail,
   KoreaderCatalogBookListItem,
@@ -379,6 +379,7 @@ export class KoreaderCatalogService {
               originalStem: basename(file.filename ?? row.title, `.${extension}`),
               format: extension,
               libraryName: row.libraryName,
+              genre: genreFromFolderPath(row.folderPath),
             }),
             extension,
             { sanitizeForCrossPlatform },
@@ -730,6 +731,7 @@ export class KoreaderCatalogService {
                 originalStem: basename(file.filename ?? title, `.${extension}`),
                 format: extension,
                 libraryName: detail.libraryName,
+                genre: genreFromFolderPath(detail.folderPath),
               }),
               extension,
               { sanitizeForCrossPlatform },

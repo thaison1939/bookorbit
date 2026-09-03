@@ -24,6 +24,22 @@ export interface PatternTokenInput {
   originalStem: string;
   format: string;
   libraryName?: string | null;
+  genre?: string | null;
+}
+
+/**
+ * Extracts the genre segment from a book's stored folder path. Paths are
+ * `/books/books/<genre>/...`, where the library mount and its literal `books` subdir form a
+ * leading run of `books` segments; the genre is the first segment after that run. Counting
+ * from the front stays correct whether a book sits in a per-book subfolder or flat under its
+ * genre. Returns undefined when no segment remains after the prefix.
+ */
+export function genreFromFolderPath(folderPath: string | null | undefined): string | undefined {
+  if (!folderPath) return undefined;
+  const segments = folderPath.split('/').filter(Boolean);
+  let index = 0;
+  while (index < segments.length && segments[index] === 'books') index += 1;
+  return segments[index];
 }
 
 /**
@@ -36,10 +52,11 @@ export interface PatternTokenInput {
  * treats the two identically, and omitting them keeps the map readable in logs.
  */
 export function buildPatternTokens(input: PatternTokenInput): Record<string, string> {
-  const { metadata, authors = [], narrators = [], originalStem, format, libraryName } = input;
+  const { metadata, authors = [], narrators = [], originalStem, format, libraryName, genre } = input;
   const tokens: Record<string, string> = { originalFilename: originalStem, extension: format };
 
   if (libraryName) tokens['library'] = libraryName;
+  if (genre) tokens['genre'] = genre;
   if (metadata.title) tokens['title'] = metadata.title;
   if (metadata.subtitle) tokens['subtitle'] = metadata.subtitle;
   if (metadata.publisher) tokens['publisher'] = metadata.publisher;

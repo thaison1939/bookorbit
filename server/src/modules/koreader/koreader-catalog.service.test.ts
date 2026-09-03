@@ -722,7 +722,7 @@ describe('KoreaderCatalogService', () => {
             sizeBytes: 1234,
             durationSeconds: null,
             downloadUrl: '/api/v1/koreader/plugin/catalog/files/100/download',
-            devicePath: 'Series/Dune/01.00 - Dune.epub',
+            devicePath: 'Series/Dune/Dune - Frank Herbert.epub',
           },
         ],
         relatedSections: [
@@ -1208,20 +1208,42 @@ describe('KoreaderCatalogService', () => {
       expect(detail.files[0]?.devicePath).toBe(manifest.items[0]!.files[0]!.devicePath);
     });
 
-    it.each<[string, string]>([
-      ['1', 'Series/Dune/01.00 - Dune.epub'],
-      ['10', 'Series/Dune/10.00 - Dune.epub'],
-      ['1.5', 'Series/Dune/01.50 - Dune.epub'],
-      ['5.10', 'Series/Dune/05.10 - Dune.epub'],
-    ])('leaves the shipped fixed2 default unchanged for index %s', async (seriesIndex, expected) => {
+    it.each<[string]>([['1'], ['10'], ['1.5'], ['5.10']])(
+      'routes a series book to a flat Series folder under the shipped default regardless of index %s',
+      async (seriesIndex) => {
+        const defaultOrganization = {
+          fileNamingPattern: DEFAULT_KOREADER_DEVICE_PATTERN,
+          seriesFileNamingPattern: '',
+          standaloneFileNamingPattern: '',
+        };
+
+        await expect(manifestDevicePath(seriesIndex, defaultOrganization)).resolves.toBe('Series/Dune/Dune - Frank Herbert.epub');
+        await expect(detailDevicePath(seriesIndex, defaultOrganization)).resolves.toBe('Series/Dune/Dune - Frank Herbert.epub');
+      },
+    );
+  });
+
+  describe('genre device paths', () => {
+    it('routes a no-series book to a flat genre folder under the shipped default', async () => {
       const defaultOrganization = {
         fileNamingPattern: DEFAULT_KOREADER_DEVICE_PATTERN,
         seriesFileNamingPattern: '',
         standaloneFileNamingPattern: '',
       };
+      const { service, opdsBookService, bookService } = makeService(defaultOrganization);
+      opdsBookService.getBookManifestPage.mockResolvedValueOnce({
+        rows: [makeManifestRow({ seriesName: null, seriesIndex: null, folderPath: '/books/books/history/Dune - Frank Herbert/Dune.epub' })],
+        hasNext: false,
+      });
+      bookService.getDetail.mockResolvedValue(
+        makeDetail({ seriesId: null, seriesName: null, seriesIndex: null, folderPath: '/books/books/history/Dune - Frank Herbert/Dune.epub' }),
+      );
 
-      await expect(manifestDevicePath(seriesIndex, defaultOrganization)).resolves.toBe(expected);
-      await expect(detailDevicePath(seriesIndex, defaultOrganization)).resolves.toBe(expected);
+      const manifest = await service.getBulkManifest(makeUser({ id: 7 }), makeQuery({ deviceId: 'device-1' }));
+      const detail = await service.getBookDetail(makeUser({ id: 7 }), 10, 'device-1');
+
+      expect(manifest.items[0]!.files[0]!.devicePath).toBe('history/Dune - Frank Herbert.epub');
+      expect(detail.files[0]?.devicePath).toBe('history/Dune - Frank Herbert.epub');
     });
   });
 });

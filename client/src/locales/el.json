@@ -1801,6 +1801,7 @@
         "tokenYear": "Έτος δημοσίευσης",
         "tokenSeries": "Όνομα σειράς",
         "tokenSeriesIndex": "Δείκτης σειράς (zero-padded)",
+        "tokenGenre": "Είδος (κορυφαίο τμήμα φακέλου)",
         "tokenPublisher": "Εκδότης",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Γλώσσα",

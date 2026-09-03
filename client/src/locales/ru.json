@@ -1872,6 +1872,7 @@
         "tokenYear": "Год публикации",
         "tokenSeries": "Название серии",
         "tokenSeriesIndex": "Индекс сезона (нулевая подставка)",
+        "tokenGenre": "Жанр (верхний сегмент папки)",
         "tokenPublisher": "Издатель",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Язык",

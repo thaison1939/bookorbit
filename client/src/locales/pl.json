@@ -1780,6 +1780,7 @@
         "tokenYear": "Rok wydania",
         "tokenSeries": "Nazwa serii",
         "tokenSeriesIndex": "Numer w serii (uzupełniony zerami)",
+        "tokenGenre": "Gatunek (górny segment folderu)",
         "tokenPublisher": "Wydawca",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Język",

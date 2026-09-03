@@ -1847,6 +1847,7 @@
         "tokenYear": "Anul publicării",
         "tokenSeries": "Numele seriilor",
         "tokenSeriesIndex": "Indexul seriilor (zero-padded)",
+        "tokenGenre": "Gen (segmentul de dosar superior)",
         "tokenPublisher": "Editor",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Limba",

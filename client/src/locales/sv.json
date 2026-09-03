@@ -1773,6 +1773,7 @@
         "tokenYear": "Publiceringsår",
         "tokenSeries": "Seriens namn",
         "tokenSeriesIndex": "Serieindex (nollstreckad)",
+        "tokenGenre": "Genre (översta mappsegmentet)",
         "tokenPublisher": "Utgivare",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Språk",

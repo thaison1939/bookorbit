@@ -1820,6 +1820,7 @@
         "tokenYear": "Рік публікації",
         "tokenSeries": "Назва серії",
         "tokenSeriesIndex": "Індекс серії (0 відкладено)",
+        "tokenGenre": "Жанр (верхній сегмент папки)",
         "tokenPublisher": "Автор",
         "tokenIsbn": "ІСБН-13",
         "tokenLanguage": "Мова",

@@ -1764,6 +1764,7 @@
         "tokenYear": "Rok zveřejnění",
         "tokenSeries": "Název série",
         "tokenSeriesIndex": "Ukazatel série (nulová prošívaná)",
+        "tokenGenre": "Žánr (horní segment složky)",
         "tokenPublisher": "Vydavatel",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Jazyk",

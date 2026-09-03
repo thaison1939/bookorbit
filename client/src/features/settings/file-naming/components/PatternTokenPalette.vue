@@ -18,6 +18,7 @@ const TOKEN_DESCRIPTION_KEYS: Record<PatternToken, string> = {
   year: 'settings.reader.fileNaming.tokenYear',
   series: 'settings.reader.fileNaming.tokenSeries',
   seriesIndex: 'settings.reader.fileNaming.tokenSeriesIndex',
+  genre: 'settings.reader.fileNaming.tokenGenre',
   publisher: 'settings.reader.fileNaming.tokenPublisher',
   isbn: 'settings.reader.fileNaming.tokenIsbn',
   language: 'settings.reader.fileNaming.tokenLanguage',

@@ -2186,6 +2186,7 @@
         "tokenYear": "Ano de publicação",
         "tokenSeries": "Nome da série",
         "tokenSeriesIndex": "Índice da série (zero-padded)",
+        "tokenGenre": "Gênero (segmento de pasta superior)",
         "tokenPublisher": "Editora",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Idioma",

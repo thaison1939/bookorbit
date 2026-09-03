@@ -1745,6 +1745,7 @@
         "tokenYear": "Julkaisuvuosi",
         "tokenSeries": "Sarjan nimi",
         "tokenSeriesIndex": "Sarjan indeksi (nollapehmustettu)",
+        "tokenGenre": "Genre (ylin kansiosegmentti)",
         "tokenPublisher": "Julkaisija",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Kieli",

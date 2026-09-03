@@ -2183,6 +2183,7 @@
         "tokenYear": "출판 연도",
         "tokenSeries": "시리즈 이름",
         "tokenSeriesIndex": "시리즈 번호(0으로 패딩됨)",
+        "tokenGenre": "장르 (최상위 폴더 세그먼트)",
         "tokenPublisher": "출판사",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "언어",

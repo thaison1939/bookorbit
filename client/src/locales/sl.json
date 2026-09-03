@@ -1923,6 +1923,7 @@
         "tokenYear": "Leto izdaje",
         "tokenSeries": "Ime serije",
         "tokenSeriesIndex": "Zaporedna številka v seriji (z vodilnimi ničlami)",
+        "tokenGenre": "Zvrst (zgornji segment mape)",
         "tokenPublisher": "Založnik",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Jezik",

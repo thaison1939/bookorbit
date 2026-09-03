@@ -2036,6 +2036,7 @@
         "tokenYear": "Anno di pubblicazione",
         "tokenSeries": "Nome della serie",
         "tokenSeriesIndex": "Indice della serie (con zeri iniziali)",
+        "tokenGenre": "Genere (segmento di cartella superiore)",
         "tokenPublisher": "Editore",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Lingua",

@@ -2205,6 +2205,7 @@
         "tokenYear": "Publication year",
         "tokenSeries": "Series name",
         "tokenSeriesIndex": "Series index (zero-padded)",
+        "tokenGenre": "Genre (top folder segment)",
         "tokenPublisher": "Publisher",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Language",

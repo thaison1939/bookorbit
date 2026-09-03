@@ -1862,6 +1862,7 @@
         "tokenYear": "出版年份",
         "tokenSeries": "系列名称",
         "tokenSeriesIndex": "系列索引 (零页)",
+        "tokenGenre": "类型 (顶层文件夹段)",
         "tokenPublisher": "出版社",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "语言",

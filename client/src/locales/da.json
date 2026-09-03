@@ -1794,6 +1794,7 @@
         "tokenYear": "Offentliggørelse år",
         "tokenSeries": "Seriens navn",
         "tokenSeriesIndex": "Serieindeks (nul-padded)",
+        "tokenGenre": "Genre (øverste mappesegment)",
         "tokenPublisher": "Udgiver",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Sprog",

@@ -1792,6 +1792,7 @@
         "tokenYear": "出版年",
         "tokenSeries": "シリーズ名",
         "tokenSeriesIndex": "系列インデックス (ゼロパディング)",
+        "tokenGenre": "ジャンル (最上位フォルダーセグメント)",
         "tokenPublisher": "発行者",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "言語",

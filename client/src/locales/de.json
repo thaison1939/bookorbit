@@ -2186,6 +2186,7 @@
         "tokenYear": "Jahr der Veröffentlichung",
         "tokenSeries": "Serienname",
         "tokenSeriesIndex": "Serien-Index (Führende Null)",
+        "tokenGenre": "Genre (oberstes Ordnersegment)",
         "tokenPublisher": "Verlag",
         "tokenIsbn": "ISBN-13",
         "tokenLanguage": "Sprache",
